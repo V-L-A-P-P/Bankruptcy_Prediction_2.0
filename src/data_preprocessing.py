@@ -173,5 +173,5 @@ class DataPreprocessor:
 
 if __name__ == "__main__":
     data = pd.read_csv(RAW_DATA_DIR + '/test.csv')
-    data = DataPreprocessor().preprocess_pipeline(data, zero_var_columns=ZERO_VAR_COLUMNS)
+    data = DataPreprocessor().preprocess_pipeline(data)
     print(data.head())
